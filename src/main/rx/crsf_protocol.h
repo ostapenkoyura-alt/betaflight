@@ -31,9 +31,9 @@
 // Rev10 CRSF docs: UART runs at 416666 baud, 8N1 at 3.0 to 3.3V level.
 // Avoid using with ExpressLRS STM32 receivers.
 #ifdef USE_CRSF_OFFICIAL_SPEC
-#define CRSF_BAUDRATE           416666
+#define CRSF_BAUDRATE           115200
 #else
-#define CRSF_BAUDRATE           420000
+#define CRSF_BAUDRATE           115200
 #endif
 
 enum { CRSF_SYNC_BYTE = 0xC8 };
